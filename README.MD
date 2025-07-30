@@ -52,11 +52,11 @@ Calculates total score from the card list, handling Aces as either 11 or 1 depen
 
 ### Step 3: Initial Card Draw
 
-    Player and Dealer are each dealt 2 cards.
+Player and Dealer are each dealt 2 cards.
 
-    Dealer's second card is hidden.
+Dealer's second card is hidden.
 
-    Player is shown both their cards but not the score (to mimic real gameplay).
+Player is shown both their cards but not the score (to mimic real gameplay).
 
 
 ```python
@@ -68,11 +68,11 @@ Calculates total score from the card list, handling Aces as either 11 or 1 depen
 
 ### Step 4: Player Turn – Hit or Stand
 
-    Player is repeatedly asked whether to Hit (draw another card) or Stand (end their turn).
+Player is repeatedly asked whether to Hit (draw another card) or Stand (end their turn).
 
-    Every time they hit, the new card is added, and the cards are displayed.
+Every time they hit, the new card is added, and the cards are displayed.
 
-    If an Ace is drawn, the player chooses whether to count it as 1 or 11.
+If an Ace is drawn, the player chooses whether to count it as 1 or 11.
 
 ```python
 
@@ -83,9 +83,9 @@ if new_card == 'A':
 
 ### Step 5: Dealer Turn (after player stands)
 
-    Dealer draws until their score is at least 17 (standard rule).
+ Dealer draws until their score is at least 17 (standard rule).
 
-    Aces are auto-adjusted here—no input.
+  Aces are auto-adjusted here—no input.
 
 ```python
 while calculate_score(dealer_cards) < 17:
@@ -100,9 +100,9 @@ while calculate_score(dealer_cards) < 17:
 
 Once both turns are done:
 
-    Scores are compared
+ Scores are compared
 
-    Winner is decided and shown with both hands revealed
+ Winner is decided and shown with both hands revealed
 
 ```python
 if player_score > 21:
